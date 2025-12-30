@@ -71,4 +71,22 @@ return {
 			vim.diagnostic.config({ virtual_text = false }) -- Disable Neovim's default virtual text diagnostics
 		end,
 	},
+	-- vscode style diff
+	{
+		"sindrets/diffview.nvim",
+        keys = {
+            {
+                "<leader>dv",
+                "<cmd>DiffviewOpen<CR>",
+                desc = "[d]iff [v]iew",
+            }
+        },
+		opts = {},
+	},
+
+	-- gitsigns
+	{
+		"lewis6991/gitsigns.nvim",
+		opts = {},
+	},
 }
